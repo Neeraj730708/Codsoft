@@ -1,0 +1,65 @@
+/* Color Variables */
+:root {
+    --primary-color: #00796b; /* Teal */
+    --secondary-color: #004d40; /* Dark Teal */
+    --accent-color: #80cbc4; /* Light Teal */
+    --background-color: #e0f2f1; /* Light Cyan */
+    --text-color: #ffffff; /* White */
+    --text-dark-color: #004d40; /* Dark Teal */
+    --button-hover-color: #004d40; /* Dark Teal */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.calculator-screen {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    font-size: 2rem;
+    text-align: right;
+    padding: 20px;
+    box-shadow: inset 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background-color: var(--accent-color);
+}
+
+.btn {
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+.operator {
+    background-color: var(--secondary-color);
+}
+
+.clear {
+    grid-column: span 4;
+    background-color: var(--secondary-color);
+}
